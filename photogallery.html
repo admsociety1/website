@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ADM Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> 
+    <style>
+    .heading {
+        text-align: center;
+        margin: 40px 0 0;
+        width: 100%;
+        }
+
+        .heading h3 {
+            font-size: 3em;
+            font-weight: 900;
+            display: inline;
+            position: relative;
+        }
+
+        .heading h3:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 3px; 
+            background-color: black; 
+        }
+
+
+        .heading h3 span {
+            font-weight: 100;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 7px;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .image-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .image-container:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay h2 {
+            color: #fff;
+            font-size: 18px;
+            margin: 0;
+        }
+        @media (max-width: 1000px) {
+            .gallery {
+                grid-template-columns: repeat(1, 1fr); /* Display one image at a time on phones */
+            }
+        }
+    </style>
+        <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-blue">
+        <div class="container-fluid">
+            <div class='bg-light' style="width: 60px; height: auto; border-radius: 45%;">
+          <a class="navbar-brand" href="index.html"><img src="adm.png" alt="logo" style="width: 60px; height: auto; border-radius: 45%;"></a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav me-2 mb-2 mb-lg-0">
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="photogallery.html">Photogallery</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="internship.html" >Internship</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="contact_us.html" >Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>    
+     
+    <div class="heading">
+    <h3>Photo <span>Gallery</span></h3> 
+    </div>
+    <br>
+    <div class="gallery p-5">
+        <div class="image-container">
+            <img class="image" src="gal/plantation1.jpg" alt="Plantation 1">
+            <div class="overlay">
+                <h2>Plantation Camp
+                    <br>
+                    "Planting hope and trees, 
+                    ADM Educational and Welfare Society 
+                    is dedicated to environmental protection 
+                    and sustainable development. 
+                    Our tree-planting initiatives 
+                    enhance greenery, air quality, 
+                    and combat climate change, underscoring 
+                    the impact of every tree."
+                </h2>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="image" src="gal/plantation2.jpg" alt="Plantation 2">
+            <div class="overlay">
+                <h2>Plantation Camp
+                    <br>
+                    "Planting hope and trees, 
+                    ADM Educational and Welfare Society 
+                    is dedicated to environmental protection 
+                    and sustainable development. 
+                    Our tree-planting initiatives 
+                    enhance greenery, air quality, 
+                    and combat climate change, underscoring 
+                    the impact of every tree."
+                </h2>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="image" src="gal/plantation3.jpg" alt="Plantation 3">
+            <div class="overlay">
+                <h2>Plantation Camp
+                    <br>
+                    "Planting hope and trees, 
+                    ADM Educational and Welfare Society 
+                    is dedicated to environmental protection 
+                    and sustainable development. 
+                    Our tree-planting initiatives 
+                    enhance greenery, air quality, 
+                    and combat climate change, underscoring 
+                    the impact of every tree."
+                </h2>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="image" src="gal/plantation4.jpg" alt="Plantation 4">
+            <div class="overlay">
+                <h2>Plantation Camp
+                    <br>
+                    "Planting hope and trees, 
+                    ADM Educational and Welfare Society 
+                    is dedicated to environmental protection 
+                    and sustainable development. 
+                    Our tree-planting initiatives 
+                    enhance greenery, air quality, 
+                    and combat climate change, underscoring 
+                    the impact of every tree."
+                </h2>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="image" src="gal/plantation5.jpg" alt="Plantation 5">
+            <div class="overlay">
+                <h2>Plantation Camp
+                    <br>
+                    "Planting hope and trees, 
+                    ADM Educational and Welfare Society 
+                    is dedicated to environmental protection 
+                    and sustainable development. 
+                    Our tree-planting initiatives 
+                    enhance greenery, air quality, 
+                    and combat climate change, underscoring 
+                    the impact of every tree."
+                </h2>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="image" src="gal/medical1.jpg" alt="Medical 1">
+            <div class="overlay">
+                <h2>Medical Camp
+                    <br>
+                    ADM Educational and Welfare Society 
+                    prioritizes your well-being, promoting 
+                    awareness of medical issues and informed 
+                    health choices for better outcomes.
+                </h2>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="image" src="gal/medical2.jpg" alt="Medical 2">
+            <div class="overlay">
+                <h2>Medical Camp
+                    <br>
+                    ADM Educational and Welfare Society 
+                    prioritizes your well-being, promoting 
+                    awareness of medical issues and informed 
+                    health choices for better outcomes.
+                </h2>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="image" src="gal/medical3.jpg" alt="Medical 3">
+            <div class="overlay">
+                <h2>Medical Camp
+                    <br>
+                    ADM Educational and Welfare Society 
+                    prioritizes your well-being, promoting 
+                    awareness of medical issues and informed 
+                    health choices for better outcomes.
+                </h2>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="image" src="gal/medical4.jpg" alt="Medical 4">
+            <div class="overlay">
+                <h2>Medical Camp
+                    <br>
+                    ADM Educational and Welfare Society 
+                    prioritizes your well-being, promoting 
+                    awareness of medical issues and informed 
+                    health choices for better outcomes.
+                </h2>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="image" src="gal/medical5.jpg" alt="Medical 5">
+            <div class="overlay">
+                <h2>Medical Camp
+                    <br>
+                    ADM Educational and Welfare Society 
+                    prioritizes your well-being, promoting 
+                    awareness of medical issues and informed 
+                    health choices for better outcomes.
+                </h2>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="image" src="gal/medical6.jpg" alt="Medical 6">
+            <div class="overlay">
+                <h2>Medical Camp
+                    <br>
+                    ADM Educational and Welfare Society 
+                    prioritizes your well-being, promoting 
+                    awareness of medical issues and informed 
+                    health choices for better outcomes.
+                </h2>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="image" src="gal/medical7.jpg" alt="Medical 7">
+            <div class="overlay">
+                <h2>Medical Camp
+                    <br>
+                    ADM Educational and Welfare Society 
+                    prioritizes your well-being, promoting 
+                    awareness of medical issues and informed 
+                    health choices for better outcomes.
+                </h2>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="image" src="gal/medical8.jpg" alt="Medical 8">
+            <div class="overlay">
+                <h2>Medical Camp
+                <br>
+                ADM Educational and Welfare Society 
+                prioritizes your well-being, promoting 
+                awareness of medical issues and informed 
+                health choices for better outcomes.
+                </h2>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="image" src="gal/medical9.jpg" alt="Medical 9">
+            <div class="overlay">
+                <h2>Medical Camp
+                    <br>
+                    ADM Educational and Welfare Society 
+                    prioritizes your well-being, promoting 
+                    awareness of medical issues and informed 
+                    health choices for better outcomes.
+                </h2>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="image" src="gal/western world visa .jpeg" alt="Medical 10">
+            <div class="overlay">
+                <h2>"Unlock your aspirations with ADM Educational 
+                    and Welfare Society. Our IELTS preparation 
+                    and study abroad counseling pave the way 
+                    for your academic and career ambitions. 
+                    We're dedicated to helping everyone realize 
+                    their overseas dreams."</h2>
+            </div>
+        </div>
+    </div>
+    <div id="Contact">
+        <footer>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-sm-12">
+                    <p>Follow us:</p>
+            <ul class="social_icon">
+                <li><a href="https://www.facebook.com/profile.php?id=61550722756940&mibextid=ZbWKwL"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="https://www.linkedin.com/in/adm-education-and-welfare-society-45a06b27b"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="https://twitter.com/AdmeduWelfare?t=ox6314gTX0mAFNC75wioKA&s=09"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="https://instagram.com/admedu.society?igshid=MzRlODBiNWFlZA=="><ion-icon name="logo-instagram"></ion-icon></a></li>
+            </ul>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+        <p>Top Links:</p>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">WebMail</a></li>
+                <li><a href="#">HelpDesk</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <h6>Our Branches:</h6>
+                <ul>
+                    <li>Pataudi road, Farrukhnagar</li>
+                    <li>NM 22,Old DLF, Sector 14, Gurugram</li>
+                    <li>Opp.Old Bus Stand , Bahadurgarh</li>
+                </ul>
+            </div>
+        <div class="col-lg-3 col-sm-6">
+            <p>Opening hours:</p>
+            <p>Mon-Thurs: 9:00am-6:00pm</p>
+            <p>Friday: 9:00am-5:00pm</p>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <p><i class="fa-regular fa-envelope"></i> info@admedusociety.org</p>
+            <p>&#9743; 9671457366,9958586721</p>
+            <p>ADM Society | All Rights Reserved </p>
+            </div>
+            </div>
+      </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="https://kit.fontawesome.com/7e8371dc0a.js" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ADM Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+   
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-blue">
+        <div class="container-fluid">
+            <div class='bg-light' style="width: 60px; height: auto; border-radius: 50%;">
+          <a class="navbar-brand" href="index.html"><img src="adm.png" alt="logo" style="width: 60px; height: auto; border-radius: 45%;"></a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav me-2 mb-2 mb-lg-0">
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="photogallery.html">Photogallery</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="internship.html" >Internship</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="contact_us.html" >Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>    
+      <div class='border m-3 p-3' style="border-radius: 20px;background-color: #c2d5da;">
+        <h3 class="fw-bold text-center mb-3">Anita Devi Memorial Education and Welfare Society</h3>
+        <div class="row">
+            <div class="col-12 col-md-2 mb-3 text-center">
+                <img src="adm.png" alt="logo" class="img-fluid rounded" style="max-width: 150px; height:auto;">
+            </div>
+            <div class="col-12 col-md-10">
+                <p>ADM Education & Welfare Society stands as a beacon of hope, dedicated to Empowering Change and Transforming Lives through its multifaceted initiatives. At the heart of our organization lies an unwavering commitment to create positive and lasting impacts, driven by fresh perspectives and innovative ideas.</p>
+                <p class="hide">Rooted in the belief that change starts with education, ADM Society focuses on holistic development across various sectors. Our initiatives encompass a wide spectrum of areas, ranging from Environmental Sustainability and Rural Development to Women's Empowerment and Health Awareness.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Upcoming events-->
+    
+    <div class="row">
+       <div class="col-sm-6 ">
+      <marquee class="blink">UPCOMING EVENTS</marquee>
+       <div class="row">    
+    <div class="col-sm-6">
+    <div class="cards">
+      <h3>TB Awarness <br /> Camp</h3>
+      <button onclick="showPopup('TBContent')">Know more</button>
+</div></div>
+    <div class="col-sm-6">
+    <div class="cards">
+      <h3>Eye Checking <br /> Camp</h3>
+      <button onclick="showPopup('EyeContent')">Know more</button>
+    </div>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+    <div class="cards">
+      <h3>Medical <br />Awarness</h3>
+	    <button onclick="showPopup('MedicalContent')">Know more</button>
+     </div>
+  </div>
+    <div class="col-sm-6">
+    <div class="cards">
+      <h3>Women's <br /> Empowerment </h3>
+	  <button onclick="showPopup('WomenContent')">Know more</button>
+      </div>
+    </div>
+</div>
+</div>
+     <!-- carousel-->
+     <div class="col-sm-6" style="height: 426px;">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" >
+              <div class="carousel-item active">
+                <img src="car/img1 (1).jpeg" class="d-block w-100" style="height:426px;" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="car/img1 (2).jpeg" class="d-block w-100" style="height:426px;" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="car/img1 (3).jpeg" class="d-block w-100" style="height:426px;" alt="...">
+              </div>
+		    <div class="carousel-item">
+                <img src="car/img1 (4).jpeg" class="d-block w-100" style="height:426px;" alt="...">
+              </div>
+
+            </div>
+          </div>
+     </div>
+     </div>
+
+<!-- Registration form-->
+<div id="Registration">
+	<div class="row p-3 d-flex justify-content-center">
+    <div class="col-sm-12 col-lg-6">
+    <section id="registration-form-section" class="section mt-5">
+    <h2>Registration form</h2>
+    <form id="registration-form" method="POST" action="http://localhost/public/submit.php">
+        <div class="form-group">
+				<label for="your-name">Name:</label>
+				<input type="text" id="your-name" placeholder="John" name="yourName" required />
+			</div>
+
+			<div class="form-group">
+				<label for="school-college">School/College:</label>
+				<input type="text" id="school-college" placeholder="Oxford University" name="schoolCollege" required />
+			</div>
+
+			<div class="form-group">
+				<label for="city">City:</label>
+				<input type="text" id="city" name="city" placeholder="Lucknow" required/>
+			</div>
+
+			<div class="form-group">
+				<label for="state">State:</label>
+				<input type="text" id="state" name="state" placeholder="Uttar Pradesh" required/>
+			</div>
+
+			<div class="form-group">
+				<label for="email">Email ID:</label>
+				<input type="email" id="email" name="email" placeholder="abc@gmail.com" required/>
+			</div>
+			 <div class="container">
+        <button type="submit" value="submit" class="submit-button1">Register</button>
+		</div>
+    </form>
+
+</section>
+    </div>
+  
+<!--certification form-->
+    <!-- certification form-->
+    
+ <div class="col-sm-12 col-lg-6">
+    <section id="certificate-form-section" class="section mt-5">
+    <h2>Request a Certificate</h2>
+    <form id="certificate-form" method="POST" action="http://localhost/public/login.php">
+        <div class="form-group">
+            <label for="your-name">Name:</label>
+            <input type="text" id="your-name" placeholder="John" name="yourName" required/>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" placeholder="abc@gmail.com" name="email" required/>
+          </div>
+          
+          <div class="form-group">
+            <label for="school-college">School/College:</label>
+            <input type="text" id="school-college" placeholder="Oxford University" name="schoolCollege" required/>
+        </div>
+        <div class="form-group">
+            <label for="city">Date of Seminar:</label>
+            <input type="date" id="city" name="city" placeholder="dd/mm/yyyy" required/>
+        </div>
+        <div class="form-group">
+            <label for="registration-no">Registration No:</label>
+            <input type="text" id="registration-no" placeholder="000121" name="registrationNo" required/>
+        </div>
+		 <div class="center-container">
+        <button type="submit"  class="submit-button">Get your Certificate</button>
+		</div>
+    </form>
+    </section>
+</div></div>
+
+<!--certification form-->
+    <!--feedback part-->
+<div class="container my-5" id="feedback">
+        <h5 class="text-center">Feedbacks from our students</h5>
+        
+        <!-- Carousel -->
+        <div id="carouselExampleIndicators" class="carousel slides" data-bs-ride="carousel" data-bs-touch="true">
+            <div class="carousel-inner"><!--1 FEEDBACK-->
+                <div class="carousel-item active">
+                    <div class="row justify-content-center ">
+                        <div class="col-lg-6">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-user"></i> Rishabh</h5>
+                                    <p class="card-text">This webinar was amazing!</p>
+                                    <p class="card-text">Rating: 
+                                        <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="carousel-item"><!--2 FEEDBACK-->
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-user"></i> Shagun</h5>
+                                    <p class="card-text">Great content and knowledgeable speakers.</p>
+                                    <p class="card-text">Rating: 
+                                        <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item"><!--3 FEEDBACK-->
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-user"></i> Himanshu</h5>
+                                    <p class="card-text">Enjoyed every bit of it.</p>
+                                    <p class="card-text">Rating: 
+                                        <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item"><!--4 FEEDBACK-->
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-user"></i> Hitesh</h5>
+                                    <p class="card-text">Could be more interactive, but still great.</p>
+                                    <p class="card-text">Rating: 
+                                        <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item"><!--5 FEEDBACK-->
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-user"></i> Anchit</h5>
+                                    <p class="card-text">Excellent presentation and materials.</p>
+                                    <p class="card-text">Rating: 
+                                        <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <!-- Customing Carousel Indicators -->
+        <div class="custom-carousel-indicators">
+            <span class="indicator active" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"></span>
+            <span class="indicator" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></span>
+            <span class="indicator" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></span>
+            <span class="indicator" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></span>
+            <span class="indicator" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></span>
+
+        </div>
+    </div>
+    <!--feedback part-->
+    <footer>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-sm-12">
+                <p>Follow us:</p>
+        <ul class="social_icon">
+            <li><a href="https://www.facebook.com/profile.php?id=61550722756940&mibextid=ZbWKwL"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="https://www.linkedin.com/in/adm-education-and-welfare-society-45a06b27b"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="https://twitter.com/AdmeduWelfare?t=ox6314gTX0mAFNC75wioKA&s=09"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="https://instagram.com/admedu.society?igshid=MzRlODBiNWFlZA=="><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+          </div>
+<div class="col-lg-3 col-sm-6">
+    <p>Top Links:</p>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">WebMail</a></li>
+            <li><a href="#">HelpDesk</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <h6>Our Branches:</h6>
+            <ul>
+                <li>Pataudi road, Farrukhnagar</li>
+                <li>NM 22,Old DLF, Sector 14, Gurugram</li>
+                <li>Opp.Old Bus Stand , Bahadurgarh</li>
+            </ul>
+        </div>
+    <div class="col-lg-3 col-sm-6">
+        <p>Opening hours:</p>
+        <p>Mon-Thurs: 9:00am-6:00pm</p>
+        <p>Friday: 9:00am-5:00pm</p>
+    </div>
+	<div class="col-lg-3 col-sm-6">
+        <p><i class="fa-regular fa-envelope"></i> info@admedusociety.org</p>
+        <p>&#9743; 9671457366,9958586721</p>
+        <p>ADM Society | All Rights Reserved </p>
+		</div>
+		</div>
+  
+    </footer>
+    <div id="TBContent" class="popup-content">
+        <h2>TB awarness Camp</h2>
+        <p>Join us at our TB Awareness Camp, where we aim to raise awareness about Tuberculosis (TB), a serious health concern affecting communities globally. This informative event provides essential insights into TB prevention, early detection, and available treatments. Our experts will share valuable knowledge, enabling attendees to understand the signs and symptoms, risk factors, and best practices for prevention. Together, let's combat TB and work towards a healthier, TB-free future.</p>
+        <!-- Add more content here if needed -->
+        <button class="close-button" onclick="closePopup('TBContent')">&times;</button>
+      </div>
+      <div id="EyeContent" class="popup-content">
+        <h2>Eye checking camp</h2>
+        <p>Join us at our Eye Checking Camp, where we provide a comprehensive range of essential services to ensure optimal eye health for all participants. Our activities include free eye screenings conducted by experienced optometrists who perform thorough examinations to detect vision issues and common eye conditions. Additionally, we offer personalized vision consultations with eye care professionals, where participants can discuss their individual eye health and potential corrective measures. Through our informative eye health education sessions, attendees gain valuable insights into best eye care practices, preventive measures, and early signs of eye-related problems. We also provide eyewear assistance, guiding individuals in selecting suitable eyeglass frames and lenses tailored to their preferences and prescriptions. Beyond these services, our Eye Checking Camp fosters community engagement, allowing participants to connect with like-minded individuals dedicated to promoting eye health and overall well-being. Prioritize your vision with us and take the first step towards clearer, healthier eyes.</p>
+        <!-- Add more content here if needed -->
+        <button class="close-button" onclick="closePopup('EyeContent')">&times;</button>
+      </div>
+      <div id="MedicalContent" class="popup-content">
+        <h2>Medical Awareness</h2>
+        <p>Health the most valuable asset. In spite of having all luxury and comfort in life an individual can't be happy if he/she is not healthy. Medical awareness is a vital aspect of our lives that should never be overlooked. It empowers us to take control of our health, make informed decisions, and contribute to the well-being of our communities. In a world where health is wealth. 
+          Education plays a major role in understanding the importance of health and the factors affecting it. Maintaining a proper routine, nutrition, exercise and hygiene proves to be helpful. Being aware of the causing factors even helped us during Covid period.
+          Prevention is better than cure it's a thought that suggests knowing the risk factors for any disease. Getting regular health checkups ease early detection of any medical issue.
+          Mental health being an indispensable part of life should also be considered as most of the people tend to avoid it. Being informed about your health empowers you to make decisions that are best for you. Early detection can save you and the healthcare system significant costs in the long run. Participating in community health initiatives, workshops, or support groups may expand your knowledge and heal with others.
+          Let's make a conscious effort to prioritize our well-being through medical awareness.</p>
+        <!-- Add more content here if needed -->
+        <button class="close-button" onclick="closePopup('MedicalContent')">&times;</button>
+      </div>
+      <div id="WomenContent" class="popup-content">
+        <h2>Women's Empowerment</h2>
+        <p>Women's empowerment is more than simply a phrase; it represents a  shift in society's perception and approach to utilising the potential of women.
+          It's about giving women the resources, chances, and freedom to speak up, take control of their futures, and actively contribute to their communities.
+          Having access to a good education is important.Women who have more education are better able to make decisions about their lives, professions, and health that will benefit their families and communities.
+          Women who are empowered are more likely to make healthy decisions for their families and themselves, as well as to have greater access to healthcare. As a result, general health and wellbeing increase.
+          For fair and representative government, women must participate in politics. Politically empowering women makes ensuring that their opinions are taken into account and that their voices are heard when making decisions.
+          Women's empowerment results in notable transformations. Strong women frequently serve as agents of social change, fostering acceptance and harmony among neighbours.
+          Women who are empowered set an example for younger generations and encourage them to strive for excellence.
+          Women's empowerment is a societal need, not merely a problem for women. By fostering more just, and successful communities and countries, it benefits everyone. It takes coordinated efforts from governments, organisations, and individuals to attain true empowerment. 
+          It is essential that we help in empowering women and giving them the opportunity to shine as equal contributors to our common future.</p>
+        <!-- Add more content here if needed -->
+        <button class="close-button" onclick="closePopup('WomenContent')">&times;</button>
+      </div>      
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>   
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/7e8371dc0a.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="adm.js"></script>
+</body>
+		
+</html>
